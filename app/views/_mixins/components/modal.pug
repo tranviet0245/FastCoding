@@ -1,0 +1,22 @@
+mixin modal(target)
+  .modal(class!=target)
+    .container
+      img(alt='btn-close' src="../images/btn-close.png").btn-close-modal
+      ul.content
+        li
+          a.text(href="/") Home
+        li
+          a.text(href="#") About Us
+        li
+          a.text(href="#") Services
+        li
+          a.text(href="#") Our Works
+        li
+          a.text(href="#") Contact
+      +list-social([
+        '../images/facebook.png',
+        '../images/twitter.png',
+        '../images/google.png',
+        '../images/ball.png',
+        '../images/be.png'
+      ])

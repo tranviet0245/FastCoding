@@ -1,0 +1,8 @@
+mixin newsletter()
+  section.newsletter
+    .container-fluid
+      +simple-pic('../images/newsletter-background.png', 'background', '../images/newsletter-background-m.png').background
+      form.content(data-form-validation)
+        .input-wrap
+          input(type="email" placeholder="Enter Your email adress for newsletter" required).input
+        +btn('subcribe')(type="submit")

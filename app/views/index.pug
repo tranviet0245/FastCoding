@@ -1,0 +1,88 @@
+extends _layouts/layout
+
+block append vars
+  - title = 'Homepage'
+  - menuIndex = 0
+
+block container
+  +banner()
+  +services([
+    {
+      logo: '../images/printer.png',
+      name: 'print design',
+      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt'
+    },
+    {
+      logo: '../images/pc.png',
+      name: 'web design',
+      description: 'Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    },
+    {
+      logo: '../images/iphone.png',
+      name: 'app design',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      logo: '../images/pencil.png',
+      name: 'logo design',
+      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu '
+    }
+  ])
+  +newsletter()
+  +our-works([
+    {
+      img: '../images/imac.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      img: '../images/office.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      img: '../images/business.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      img: '../images/ipad.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      img: '../images/technology.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    },
+    {
+      img: '../images/macbook.png',
+      title: 'ABAZOO WEBSITE',
+      description: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo '
+    }
+  ])
+  +clients()
+  +our-team([
+    {
+      img: '../images/warstwa-5.png',
+      name: 'Catherina Gail',
+      text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut'
+    },
+    {
+      img: '../images/warstwa-6.png',
+      name: 'Harvey Rube',
+      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut'
+    },
+    {
+      img: '../images/warstwa-7.png',
+      name: 'Janet Pris',
+      text: 'Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli'
+    },
+    {
+      img: '../images/warstwa-8.png',
+      name: 'Kevin Ward',
+      text: 'Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat '
+    }
+  ])
+  +contact()
+  +modal('modal-menu')

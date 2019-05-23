@@ -1,0 +1,13 @@
+mixin banner()
+  section.banner(data-anchor)
+    .container-fluid
+      +simple-pic('../images/macbook-bg.png', 'background', '../images/macbook-bg-m.png').background
+      .content
+        +heading('We Design ','things').title
+          span.text-special things
+        p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+          br
+          | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
+        +btn('Hire us')(data-section=7).btn-anchor
+        +btn('Our works')(data-section=4).btn-anchor
+      +img('icon', '../images/icon-down.png')(data-section=2).icon-down.btn-anchor

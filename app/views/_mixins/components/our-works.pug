@@ -1,0 +1,8 @@
+mixin our-works(items)
+  section.our-works(data-load-items data-url="../data/list-works.json" data-method="post" data-items-per-page="6")
+    .container
+      +heading('Our ','Works').title
+      p.description Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      ul.list-works
+      img(data-icon src="../images/icon-loading.gif", alt="loading").icon-loading
+      button.load-more.d-none Show more

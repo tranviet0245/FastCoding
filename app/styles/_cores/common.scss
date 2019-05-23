@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  min-width: 210px;
+  font-size: 16px;
+  padding: 5px 0;
+  background: transparent;
+  text-align: center;
+  border-radius: 10px;
+  color: $white-1;
+  text-transform: uppercase;
+  border: 2px solid $gray-1;
+  cursor: pointer;
+  transition: all .3s;
+  
+  &:hover {
+    background: $main-color;
+    border-color: $main-color;
+    transition: all .3s;
+  }
+}
+
+.heading {
+  @include mq('md') {
+    white-space: nowrap;
+  }
+
+  .text {
+    text-transform: uppercase;
+  }
+
+  .special {
+    color: $main-color;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,33 @@
+.footer {
+  text-transform: uppercase;
+  padding: 20px 0;
+  background-color: $black-2;
+  color: $white-1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+    @include mq('md') {
+      margin: 0;
+    }
+  }
+  
+  .logo {
+    @include mq('md') {
+      margin-left: auto;
+    }
+  }
+}
+
+@include mq("sm") {
+
+}

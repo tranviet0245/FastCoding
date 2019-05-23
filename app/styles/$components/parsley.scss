@@ -1,0 +1,14 @@
+.parsley-errors-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  @include mq('md') {
+    text-align: left;
+  }
+  .parsley-required, .parsley-type {
+    color: $red;
+  }
+}

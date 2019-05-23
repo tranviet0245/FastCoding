@@ -1,0 +1,120 @@
+.contact {
+  color: $white-1;
+  text-align: center;
+  overflow: hidden;
+  .container-fuild {
+    position: relative;
+  }
+
+  .background {
+    width: 100%;
+    @include mq('md') {
+      min-height: 550px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 980px;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 16px;
+    @include mq('md') {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq('md') {
+      width: 80%;
+    }
+  }
+
+
+
+  .input-wrap {
+    border: none;
+    width: 100%;
+    margin: 15px 0;
+    @include mq('md') {
+      flex-basis: calc(50% - 20px);
+      margin: 20px 20px 30px 20px;
+    }
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  
+  .input-form {
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+  }
+
+  .text-area {
+    margin: 15px 0 30px 0;
+    flex-basis: 100%;
+    height: 100px;
+    @include mq('md') {
+      height: 200px;
+      margin: 0 0 30px 0;
+    }
+    .input-form {
+      height: 100%;
+    }
+  }
+
+  .btn-submit {
+    width: 100%;
+    @include mq('md') {
+      width: auto;
+    }
+  }
+
+  .list-social {
+    display: block;
+    margin: 20px auto;
+    @include mq('md') {
+      margin: 0 0 0 auto;
+    }
+
+    .item-social {
+      margin-left: 20px;
+      cursor: pointer;
+      &:first-child {
+        margin-left: 0;
+      }
+      .no-touchevents &:hover {
+        opacity: .7;
+      }
+      @include mq('md') {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .parsley-errors-list {
+    text-align: left;
+  }
+}

@@ -1,0 +1,121 @@
+.our-works {
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+
+  .title {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .text-special {
+    color: $main-color;
+  }
+
+  .description {
+    max-width: 400px;
+    margin: 30px auto 100px auto; 
+  }
+
+  .list-works {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq('md') {
+    }
+  }
+
+  .item {
+    margin: 10px 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    @include mq('md') {
+      flex-basis: calc(33.33333% - 20px);
+      margin: 10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background: rgba(0,0,0,0.5);
+      @include mq('md') {
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        background: $main-color-1;
+      }
+    }
+
+    &:hover:after , &:hover .item-content{
+      transition: all .3s;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .background {
+      max-width: 100%;
+    }
+
+    .item-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      color: $white-1;
+      @include mq('md') {
+        color: $white-1;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+      }
+    }
+    .item-btn {
+      background-color: $main-color;
+      border-color: $main-color;
+      transition: all .3s;
+      &:hover {
+        background-color: $white-1;
+        color: $main-color;
+        border-color: $white-1;
+        transition: all .3s;
+      }
+    }
+  }
+
+  .load-more {
+    text-transform: uppercase;
+    color: $black-1;
+    background-color: transparent;
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 20px;
+    transition: all .3s;
+    outline: none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.hidden {
+      display: none;
+    }
+    &:hover {
+      background-color: $main-color;
+      color: $white-1;
+      transition: all .3s;
+    }
+  }
+}

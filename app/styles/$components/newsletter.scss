@@ -1,0 +1,51 @@
+.newsletter {
+  .container-fluid {
+    position: relative;
+    padding: 0;
+  }
+
+  .background{
+    width: 100%;
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+
+    @include mq('md') {
+      padding: 0;
+    }
+  }
+
+  .input-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    @include mq('md') {
+      margin-right: 30px;
+      width: 50%;
+    }
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 30px;
+    @include mq('md') {
+      margin-top: 0;
+    }
+  }
+}

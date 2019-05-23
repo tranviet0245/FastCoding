@@ -1,0 +1,26 @@
+mixin our-team(items)
+  section.our-team(data-active-members data-active=2)&attributes(attributes)
+    .container
+      +heading('our ', 'team').title
+      p.description ed ut perspiciatis unde omnis iste natus error sit 
+        br
+        | voluptatem accusantium doloremque laudantium totam rem aperiam
+      ul.list-members
+        if items
+          each item in items
+            li.member
+              +img('avatar', item.img).avatar
+              .profile
+                p.name!=item.name
+                .list-social
+                  +list-social([
+                    '../images/facebook.png',
+                    '../images/twitter.png',
+                    '../images/google.png',
+                  ])
+                p.comment!=item.text
+      .list-dots
+        span.dot-item
+        span.dot-item
+        span.dot-item
+        span.dot-item

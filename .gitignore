@@ -1,0 +1,8 @@
+.git
+npm-debug.log
+.publish
+.vscode
+dist
+node_modules
+package-lock.json
+app/locales/*.json

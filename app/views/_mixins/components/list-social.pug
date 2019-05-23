@@ -1,0 +1,5 @@
+mixin list-social(items)
+  .list-social
+    if items
+      each item in items
+        +img('icon-social', item).item-social

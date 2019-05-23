@@ -1,0 +1,27 @@
+mixin clients()
+  section.clients
+    .container-fuild
+      +simple-pic('../images/clients-background.png', 'background', '../images/clients-background-m.png').background
+      .content.swiper-container(data-custom-swiper)
+        .swiper-wrapper
+          .swiper-slide
+            +img('avatar', '../images/warstwa-9.png').avatar
+            p.comment These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+            span.name John Smith
+          .swiper-slide
+            +img('avatar', '../images/warstwa-9.png').avatar
+            p.comment These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+            span.name John Smith
+          .swiper-slide
+            +img('avatar', '../images/warstwa-9.png').avatar
+            p.comment These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+            span.name John Smith
+          .swiper-slide
+            +img('avatar', '../images/warstwa-9.png').avatar
+            p.comment These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+            span.name John Smith
+        .swiper-button-next
+        .swiper-button-prev
+        .swiper-pagination
+
+

@@ -1,0 +1,11 @@
+mixin services(items)
+  section.services 
+    .container
+      ul.services-items
+        if items
+          each item in items
+            li.item
+              +img('icon-logo', item.logo).logo
+              span.name!=item.name
+              p.description!=item.description
+    
